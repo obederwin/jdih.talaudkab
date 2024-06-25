@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda - JDIH Talaudkab</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css" />
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body style="position: relative; min-height: 100%; top: 0px">
+    <!-- Hero Section -->
+    <div
+      class="container-fluid hero-section bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1>Selamat Datang di JDIH Talaudkab</h1>
+        <p>Jaringan Dokumentasi dan Informasi Hukum Kabupaten Talaud</p>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="https://talaudkab.go.id" target="_blank">
+            <img
+              src="images/logo-talaudkab.jpg"
+              alt="Logo Kabupaten Kepulauan Talaud"
+              class="navbar-logo" />
+          </a>
+          <a href="https://jdihn.go.id" target="_blank">
+            <img
+              src="images/logo-jdihn.jpg"
+              alt="Logo JDIH"
+              class="navbar-logo" />
+          </a>
+          JDIH Talaudkab
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="http://localhost:5500/index.html"
+                >Beranda</a
+              >
+            </li>
+            <!-- Dropdown menu for Profil -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="profilDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Profil
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                <li><a class="dropdown-item" href="#">Visi Misi</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">tugas Pokok dan Fungsi</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Program Kerja</a></li>
+                <li><a class="dropdown-item" href="#">SOP</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Struktur Organisasi</a>
+                </li>
+                <li><a class="dropdown-item" href="#">SKPD Anggota</a></li>
+                <li><a class="dropdown-item" href="#">Pengelola</a></li>
+              </ul>
+            </li>
+            <!-- Dropdown menu for Produk Hukum Desa-->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="http://localhost:5500/produkHukumDesa.html"
+                >Produk Hukum Desa</a
+              >
+            </li>
+            <!-- Dropdown menu for Produk Hukum -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="produkHukumDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Produk Hukum
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="produkHukumDropdown">
+                <li><a class="dropdown-item" href="#">Peraturan Daerah</a></li>
+                <li><a class="dropdown-item" href="#">Peraturan Bupati</a></li>
+                <li><a class="dropdown-item" href="#">Keputusan Bupati</a></li>
+                <li><a class="dropdown-item" href="#">Instruksi Bupati</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Rancangan Peraturan Daerah</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Rancangan Peraturan Bupati</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Staatsblad</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Peraturan Terjemahan Resmi</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Abstrak Peraturan</a></li>
+              </ul>
+            </li>
+            <!-- Dropdown menu for Dokumen Lainnya -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dokumenLainnyaDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dokumen Lainnya
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="dokumenLainnyaDropdown">
+                <li><a class="dropdown-item" href="#">Naskah Akademis</a></li>
+                <li><a class="dropdown-item" href="#">MOU dan PKS</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Surat Edaran Bupati</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Surat Edaran Sekda</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Propemperda</a></li>
+              </ul>
+            </li>
+            <!-- Dropdown menu for Informasi-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="informasiDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Informasi
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="informasiDropdown">
+                <li><a class="dropdown-item" href="#">Pengumuman</a></li>
+                <li><a class="dropdown-item" href="#">Video</a></li>
+                <li><a class="dropdown-item" href="#">Galeri Kegiatan</a></li>
+                <li><a class="dropdown-item" href="#">Statistik</a></li>
+              </ul>
+            </li>
+            <!-- Dropdown menu for Download-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="downloadDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Download
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="downloadDropdown">
+                <li><a class="dropdown-item" href="#">Dokumen</a></li>
+                <li><a class="dropdown-item" href="#">Katalog Perda</a></li>
+                <li><a class="dropdown-item" href="#">Katalog Perbup</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="content-section-single py-4">
+      <div class="container">
+        <div class="row">
+          <h2 class="content-column-title">Produk Hukum Desa</h2>
+          <div class="col-md-9">
+            <form
+              class="content-box row px-1 mx-1 py-3 mb-4 justify-content-between">
+              <div class="col-md-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  value="Nama peraturan" />
+              </div>
+              <div class="col-md-4">
+                <select class="form-select">
+                  <option selected disabled value="">Pilih Kecamatan</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <select class="form-select">
+                  <option selected disabled value="">Pilih Desa</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-12 pt-2">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    Total <span class="fw-bold">120</span> produk hukum.
+                  </label>
+                </div>
+              </div>
+            </form>
+
+            <!-- Add your dynamic news content here -->
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Judul Berita 1</h5>
+                <p class="card-text">Ringkasan berita 1...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Judul Berita 2</h5>
+                <p class="card-text">Ringkasan berita 2...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Judul Berita 3</h5>
+                <p class="card-text">Ringkasan berita 3...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Judul Berita 4</h5>
+                <p class="card-text">Ringkasan berita 4...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Judul Berita 5</h5>
+                <p class="card-text">Ringkasan berita 5...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Judul Berita 6</h5>
+                <p class="card-text">Ringkasan berita 6...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Judul Berita 6</h5>
+                <p class="card-text">Ringkasan berita 6...</p>
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+            <h2 class="content-column-title">Produk Hukum</h2>
+            <!-- Add your dynamic legal products content here -->
+            <ul class="list-group content-box">
+              <li class="list-group-item">Produk Hukum</li>
+              <li class="list-group-item">Produk Hukum 2</li>
+              <li class="list-group-item">Produk Hukum 3</li>
+              <!-- Repeat similar items for more products -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+      <div class="container d-flex justify-content-between">
+        <p>
+          &copy; 2024 <span class="fw-bold">Bagian Hukum</span> - Kabupaten
+          Kepulauan Talaud. All Rights Reserved.
+        </p>
+        <p>
+          Dibuat oleh
+          <span class="fw-bold">Diskominfo Kabupaten Kepulauan Talaud</span>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- back-to-top -->
+    <a href="#" id="back-to-top" class="back-to-top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
