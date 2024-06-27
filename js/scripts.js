@@ -51,7 +51,8 @@ document.getElementById("back-to-top").addEventListener("click", function (e) {
 })();
 
 // CAROUSEL PLUGIN DEFINITION
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
+function drawCarousel() {
   const cards = [
     {
       title: "Peraturan Daerah",
@@ -126,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const carouselContent = document.getElementById("carouselContent");
-  const cardsPerSlide = 4;
+  var cardsPerSlide = 4;
   let currentIndex = 0;
 
   function createSlide(cardIndices) {
@@ -169,7 +170,14 @@ document.addEventListener("DOMContentLoaded", function () {
     return carouselItem;
   }
 
-  function generateCarouselSlides() {
+  function generateCarouselSlides(cardsPerSlide) {
+    // var cardsPerSlide = cardsPerSlide;
+    var x = window.matchMedia("(min-width:700px)");
+    if (x.matches) {
+      cardsPerSlide = 4;
+    } else {
+      cardsPerSlide = 1;
+    }
     for (let i = 0; i < cards.length; i++) {
       const cardIndices = [];
       for (let j = 0; j < cardsPerSlide; j++) {
@@ -181,4 +189,4 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   generateCarouselSlides();
-});
+}
