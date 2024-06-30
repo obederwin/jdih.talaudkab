@@ -7,6 +7,29 @@ Large	lg	≥992px
 Extra large	xl	≥1200px
 Extra extra large	xxl	≥1400px
  */
+:root {
+  /* // `xs` returns only a ruleset and no media query */
+  /* // ... { ... } */
+
+  /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+  /* @media (max-width: 575.98px) { ... } */
+  --sm-max-width: 575.98px;
+  /* // `md` applies to small devices (landscape phones, less than 768px) */
+  /* @media (max-width: 767.98px) { ... } */
+  --md-max-width: 767.98px;
+
+  /* // `lg` applies to medium devices (tablets, less than 992px) */
+  /* @media (max-width: 991.98px) { ... } */
+  --lg-max-width: 991.98px;
+
+  /* // `xl` applies to large devices (desktops, less than 1200px) */
+  /* @media (max-width: 1199.98px) { ... } */
+  --xl-max-width: 1199.98px;
+
+  /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+  /* @media (max-width: 1399.98px) { ... } */
+  --sm-max-width: 1399.98px;
+}
 
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
@@ -17,6 +40,7 @@ body {
   position: relative;
   min-height: 100%;
   top: 0px;
+  overflow-x: hidden;
   /* padding-top: 56px; Adjust according to the height of your navbar */
 }
 
@@ -29,7 +53,8 @@ a {
 }
 
 .header {
-  font-size: 0.7rem;
+  font-size: 1rem;
+  background-color: dodgerblue;
 }
 
 .content-section-single {
@@ -88,31 +113,18 @@ a {
 .hero-section {
   font-family: "Poppins", sans-serif;
   position: relative;
-  background-image: url("../images/hero-image.jpg");
+  max-width: 100vw;
+  max-height: 100vh;
+  background-image: url(../images/hero-bg.png);
+  background-color: rgba(0, 200, 254, 0.4);
   background-size: cover;
-  background-position: center;
-  height: 84vh;
-  z-index: 0; /* Agar elemen konten berada di atas */
-}
-
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: inherit;
-  background-size: inherit;
-  background-position: inherit;
-  filter: brightness(50%); /* Mengurangi kecerahan gambar latar belakang */
-  z-index: -1; /* Agar pseudo-elemen berada di belakang elemen utama */
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
 }
 
 /* Gaya untuk konten di dalam elemen hero */
 .hero-section-content {
   position: relative;
-  z-index: 2; /* Agar konten berada di atas lapisan biru */
   color: white; /* Anda bisa menyesuaikan gaya teks sesuai kebutuhan */
   text-align: center;
   /* padding: 20px; */
@@ -120,7 +132,7 @@ a {
 }
 
 .list-new-regulations {
-  height: 30vfh;
+  height: 30vh;
   margin-top: 40vh;
 }
 
@@ -219,6 +231,21 @@ a {
 }
 
 /* Navbar Styling */
+
+.navbar {
+  color: #fff !important;
+  background-color: rgba(254, 254, 254, 1) !important;
+  /* transform: translateY(0px);
+  transition: opacity 1s ease, transform 1s ease; */
+}
+
+.navbar .fixed-top {
+  /* color: #000 !important; */
+  background-color: rgba(254, 254, 254, 0.1) !important;
+  /* margin-top: 0; */
+  transition: background-color 2s, border-color 2s;
+}
+
 .navbar-box-shadow {
   box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -252,7 +279,6 @@ a {
   font-weight: 500;
   transition: background-color 0.3s, border-color 0.3s;
 }
-
 .dropdown:hover .dropdown-menu {
   display: block;
   /* margin-top: 0;
@@ -275,11 +301,35 @@ a {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+#scope-peraturan-terbaru {
+  width: 200px;
+  border: none;
+  border-radius: 0;
+}
+#scope-peraturan-terbaru::selection::shadow {
+  border-radius: 0;
+}
+
+.peraturan-terbaru .card {
+  width: 48%;
+}
+
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 557px) {
   * {
     font-size: x-small;
   }
+
+  .hero-section {
+    max-height: 60vh;
+  }
+
+  /* Background untuk carousel */
+  #carouselListDocuments {
+    margin-top: 20vh;
+    max-height: 20vh;
+  }
+
   .dropdown-menu {
     display: none;
   }
@@ -288,6 +338,16 @@ a {
     height: 120px;
     min-width: 96vw;
     padding-top: 10px;
+  }
+  .peraturan-terbaru .card {
+    width: 98vw;
+    font-size: small;
+  }
+
+  .peraturan-terbaru img {
+    height: 92px;
+    margin: auto;
+    width: auto;
   }
 
   .card-picture {
@@ -462,22 +522,3 @@ footer p {
 .fs-8 {
   font-size: 0.6rem;
 }
-
-/* 
-// `xs` returns only a ruleset and no media query
-// ... { ... }
-
-// `sm` applies to x-small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { ... }
-
-// `md` applies to small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { ... }
-
-// `lg` applies to medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { ... }
-
-// `xl` applies to large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... }
-
-// `xxl` applies to x-large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) { ... } */
