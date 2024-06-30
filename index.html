@@ -15,7 +15,7 @@
   </head>
   <body onload="drawCarousel()">
     <!-- Header section -->
-    <div class="container-fluid bg-primary text-white header">
+    <div class="container-fluid text-white header">
       <div class="container d-flex py-1">
         <a
           class="px-3 border-start border-end border-light text-light"
@@ -56,7 +56,7 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container">
         <div class="navbar-brand">
           <a href="https://talaudkab.go.id" target="_blank">
@@ -103,9 +103,7 @@
               </a>
               <ul class="dropdown-menu p-1" aria-labelledby="profilDropdown">
                 <li>
-                  <a
-                    class="dropdown-item py-2"
-                    href="http://localhost:5500/visiMisi.html"
+                  <a class="dropdown-item py-2" href="visiMisi.html"
                     >Visi Misi</a
                   >
                 </li>
@@ -131,9 +129,7 @@
             </li>
             <!-- Dropdown menu for Produk Hukum Desa-->
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="http://localhost:5500/produkHukumDesa.html"
+              <a class="nav-link" href="produkHukumDesa.html"
                 >Produk Hukum Desa</a
               >
             </li>
@@ -254,9 +250,9 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="coba.html" target="_blank">Coba</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -264,8 +260,7 @@
 
     <!-- Main Content -->
     <!-- Hero section -->
-    <section
-      class="container-fluid hero-section bg-primary text-white text-center py-5">
+    <section class="container-fluid hero-section text-white text-center py-5">
       <div class="container-fluid hero-section-content">
         <h1>Selamat Datang di JDIH Talaud</h1>
         <p>
@@ -387,9 +382,321 @@
     </section>
     <!-- Main Content -->
     <section class="content-section-single py-4">
+      <div class="container peraturan-terbaru">
+        <div class="row justify-content-center text-center mb-2">
+          <div class="fs-4 fw-semibold">
+            PERATURAN TERBARU DI KABUPATEN KEPULAUAN TALAUD
+          </div>
+
+          <select
+            class="form-select fs-6 my-3"
+            name="scope-peraturan-terbaru"
+            id="scope-peraturan-terbaru">
+            <option value="satuHari" selected>24 Jam terakhir</option>
+            <option value="seminggu">Seminggu terakhir</option>
+            <option value="sebulan">Sebulan terakhir</option>
+            <option value="enamBulan">Enam bulan terakhir</option>
+          </select>
+        </div>
+        <div class="row">
+          <div
+            class="d-flex col-md-12 flex-md-row flex-wrap justify-content-around">
+            <!-- Add your dynamic news content here -->
+            <div class="card mb-4">
+              <div class="row g-0">
+                <div
+                  class="col-3 d-flex justify-content-center align-items-center">
+                  <img
+                    class="card-picture"
+                    src="images/icon-skades-3.png"
+                    alt="" />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <div class="row g-0">
+                      <h5 class="card-title">
+                        Surat Keputusan Kepala Desa Nomor 7 Tahun 2024
+                        <span
+                          class="badge badge-berlaku text-bg-success rounded-pill py-1 px-2 fs-7 fw-normal ms-1">
+                          <i class="fa fa-check-circle" aria-hidden="true"></i
+                          >&nbsp Berlaku
+                        </span>
+                      </h5>
+                      <p class="card-text">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Kiama - Kec. Melonguane.
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i
+                        >&nbsp Ditetapkan 4 Januari 2024
+                      </p>
+                      <p class="mt-2 mb-4">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp
+                        Tentang Pembentukan Panitia Manduru u Tonna
+                      </p>
+                    </div>
+                    <div class="row g-0">
+                      <div class="col-md-12">
+                        <a href="#" class="btn btn-info fs-7 me-2"
+                          ><i class="fa fa-list-alt" aria-hidden="true"></i
+                          >&nbsp Detail</a
+                        >
+                        <a href="#" class="btn btn-primary fs-7"
+                          ><i class="fa fa-download" aria-hidden="true"></i
+                          >&nbsp Download</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="row g-0">
+                <div
+                  class="col-3 d-flex justify-content-center align-items-center">
+                  <img
+                    class="card-picture"
+                    src="images/icon-skades-3.png"
+                    alt="" />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <div class="row g-0">
+                      <h5 class="card-title">
+                        Surat Keputusan Kepala Desa Nomor 7 Tahun 2024
+                        <span
+                          class="badge badge-berlaku text-bg-success rounded-pill py-1 px-2 fs-7 fw-normal ms-1">
+                          <i class="fa fa-check-circle" aria-hidden="true"></i
+                          >&nbsp Berlaku
+                        </span>
+                      </h5>
+                      <p class="card-text">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Kiama - Kec. Melonguane.
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i
+                        >&nbsp Ditetapkan 4 Januari 2024
+                      </p>
+                      <p class="mt-2 mb-4">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp
+                        Tentang Pembentukan Panitia Manduru u Tonna
+                      </p>
+                    </div>
+                    <div class="row g-0">
+                      <div class="col-md-12">
+                        <a href="#" class="btn btn-info fs-7 me-2"
+                          ><i class="fa fa-list-alt" aria-hidden="true"></i
+                          >&nbsp Detail</a
+                        >
+                        <a href="#" class="btn btn-primary fs-7"
+                          ><i class="fa fa-download" aria-hidden="true"></i
+                          >&nbsp Download</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="row g-0">
+                <div
+                  class="col-3 d-flex justify-content-center align-items-center">
+                  <img
+                    class="card-picture"
+                    src="images/icon-skades-3.png"
+                    alt="" />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <div class="row g-0">
+                      <h5 class="card-title">
+                        Surat Keputusan Kepala Desa Nomor 7 Tahun 2024
+                        <span
+                          class="badge badge-berlaku text-bg-success rounded-pill py-1 px-2 fs-7 fw-normal ms-1">
+                          <i class="fa fa-check-circle" aria-hidden="true"></i
+                          >&nbsp Berlaku
+                        </span>
+                      </h5>
+                      <p class="card-text">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Kiama - Kec. Melonguane.
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i
+                        >&nbsp Ditetapkan 4 Januari 2024
+                      </p>
+                      <p class="mt-2 mb-4">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp
+                        Tentang Pembentukan Panitia Manduru u Tonna
+                      </p>
+                    </div>
+                    <div class="row g-0">
+                      <div class="col-md-12">
+                        <a href="#" class="btn btn-info fs-7 me-2"
+                          ><i class="fa fa-list-alt" aria-hidden="true"></i
+                          >&nbsp Detail</a
+                        >
+                        <a href="#" class="btn btn-primary fs-7"
+                          ><i class="fa fa-download" aria-hidden="true"></i
+                          >&nbsp Download</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="row g-0">
+                <div
+                  class="col-3 d-flex justify-content-center align-items-center">
+                  <img
+                    class="card-picture"
+                    src="images/icon-skades-3.png"
+                    alt="" />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <div class="row g-0">
+                      <h5 class="card-title">
+                        Surat Keputusan Kepala Desa Nomor 7 Tahun 2024
+                        <span
+                          class="badge badge-berlaku text-bg-success rounded-pill py-1 px-2 fs-7 fw-normal ms-1">
+                          <i class="fa fa-check-circle" aria-hidden="true"></i
+                          >&nbsp Berlaku
+                        </span>
+                      </h5>
+                      <p class="card-text">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Kiama - Kec. Melonguane.
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i
+                        >&nbsp Ditetapkan 4 Januari 2024
+                      </p>
+                      <p class="mt-2 mb-4">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp
+                        Tentang Pembentukan Panitia Manduru u Tonna
+                      </p>
+                    </div>
+                    <div class="row g-0">
+                      <div class="col-md-12">
+                        <a href="#" class="btn btn-info fs-7 me-2"
+                          ><i class="fa fa-list-alt" aria-hidden="true"></i
+                          >&nbsp Detail</a
+                        >
+                        <a href="#" class="btn btn-primary fs-7"
+                          ><i class="fa fa-download" aria-hidden="true"></i
+                          >&nbsp Download</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="row g-0">
+                <div
+                  class="col-3 d-flex justify-content-center align-items-center">
+                  <img
+                    class="card-picture"
+                    src="images/icon-skades-3.png"
+                    alt="" />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <div class="row g-0">
+                      <h5 class="card-title">
+                        Surat Keputusan Kepala Desa Nomor 7 Tahun 2024
+                        <span
+                          class="badge badge-berlaku text-bg-success rounded-pill py-1 px-2 fs-7 fw-normal ms-1">
+                          <i class="fa fa-check-circle" aria-hidden="true"></i
+                          >&nbsp Berlaku
+                        </span>
+                      </h5>
+                      <p class="card-text">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Kiama - Kec. Melonguane.
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i
+                        >&nbsp Ditetapkan 4 Januari 2024
+                      </p>
+                      <p class="mt-2 mb-4">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp
+                        Tentang Pembentukan Panitia Manduru u Tonna
+                      </p>
+                    </div>
+                    <div class="row g-0">
+                      <div class="col-md-12">
+                        <a href="#" class="btn btn-info fs-7 me-2"
+                          ><i class="fa fa-list-alt" aria-hidden="true"></i
+                          >&nbsp Detail</a
+                        >
+                        <a href="#" class="btn btn-primary fs-7"
+                          ><i class="fa fa-download" aria-hidden="true"></i
+                          >&nbsp Download</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="row g-0">
+                <div
+                  class="col-3 d-flex justify-content-center align-items-center">
+                  <img
+                    class="card-picture"
+                    src="images/icon-skades-3.png"
+                    alt="" />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <div class="row g-0">
+                      <h5 class="card-title">
+                        Surat Keputusan Kepala Desa Nomor 7 Tahun 2024
+                        <span
+                          class="badge badge-berlaku text-bg-success rounded-pill py-1 px-2 fs-7 fw-normal ms-1">
+                          <i class="fa fa-check-circle" aria-hidden="true"></i
+                          >&nbsp Berlaku
+                        </span>
+                      </h5>
+                      <p class="card-text">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Kiama - Kec. Melonguane.
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i
+                        >&nbsp Ditetapkan 4 Januari 2024
+                      </p>
+                      <p class="mt-2 mb-4">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp
+                        Tentang Pembentukan Panitia Manduru u Tonna
+                      </p>
+                    </div>
+                    <div class="row g-0">
+                      <div class="col-md-12">
+                        <a href="#" class="btn btn-info fs-7 me-2"
+                          ><i class="fa fa-list-alt" aria-hidden="true"></i
+                          >&nbsp Detail</a
+                        >
+                        <a href="#" class="btn btn-primary fs-7"
+                          ><i class="fa fa-download" aria-hidden="true"></i
+                          >&nbsp Download</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content-section-single py-4">
       <div class="container">
         <div class="row">
-          <h2 class="content-column-title">Berita Terbaru</h2>
+          <div class="fs-4 fw-semibold">PERATURAN TERLARIS</div>
+          <div class="fs-6 fw-normal mb-2">
+            Daftar Peraturan yang baru saja disahkan
+          </div>
           <div class="col-md-8">
             <!-- Add your dynamic news content here -->
             <div class="card mb-4">
@@ -792,6 +1099,7 @@
                 <a href="#" class="btn btn-light border my-1 me-1"
                   >Pariwisata</a
                 >
+                <a href="#" class="btn btn-light border my-1 me-1">Kearsipan</a>
                 <a href="#" class="btn btn-light border my-1 me-1">Kesehatan</a>
                 <a href="#" class="btn btn-light border my-1 me-1"
                   >Infrastruktur</a
